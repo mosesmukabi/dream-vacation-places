@@ -8,18 +8,20 @@
 <body>
     <h1>My 3 Dream Vacation Places</h1>
     <h2>Miami Beach</h2>
-    <p>Miami Beach is an iconic destination that perfectly blends natural beauty with urban sophistication, offering pristine beaches, a vibrant nightlife, and a rich cultural heritage. The Art Deco Historic District adds a touch of history with its colorful, retro architecture, while the diverse culinary scene provides a range of dining experiences from fresh seafood to international cuisines. With a legendary nightlife and a welcoming, multicultural community, Miami Beach is an ideal choice for anyone seeking relaxation, entertainment, and a taste of diverse cultures, all in one unforgettable location.</p>
+    <p><a href="https://en.wikipedia.org/wiki/Miami_Beach,_Florida" target="_blank"><em><q><i>Miami Beach</i></q></em></a> is an iconic destination that perfectly blends natural beauty with urban sophistication, offering pristine beaches, a vibrant nightlife, and a rich cultural heritage. The Art Deco Historic District adds a touch of history with its colorful, retro architecture, while the diverse culinary scene provides a range of dining experiences from fresh seafood to international cuisines. With a legendary nightlife and a welcoming, multicultural community, Miami Beach is an ideal choice for anyone seeking relaxation, entertainment, and a taste of diverse cultures, all in one unforgettable location.</p>
 
     <h3>miami beach images</h3>
     <figure>
+        <div>
         <img src="images/miami beach.jpeg" alt="image of miami beach" width="200px">
         <figcaption>This is an aerial view of miami beach which is very beautiful</figcaption>
 
         <img src="images/miami c.jpg" alt="an image of miami beach" width="200px">
         <figcaption>Fantastic and amazing place in miami</figcaption>
-
+        
         <img src="images/miami.jpeg" alt="miami beach photo" width="200px">
         <figcaption>The southern portion of Miami Beach, known as South Beach (foreground), and Downtown Miam</figcaption>
+    </div>
     </figure>
 
     <h3>Parking list for miami beach</h3>
@@ -106,9 +108,19 @@
 
         <label for="email">Email: </label>
         <input type="email" name="" id="email" required placeholder="enter your email"><br><br>
-        <label for="message">what places would you like to visit: </label>
+        <label for="visitarea">place you would like to visit: </label>
+        <input list="visitareas" id="visitarea" required placeholder="eg diani"> <br> <br>
+        <datalist id="visitareas">
+            <option value="great wall’s of china">
+            <option value="miami beach">
+            <option value="Egypt pyraminds">
+        </datalist>
+        <label for="message">why the place above: </label>
         <textarea name="" id="message" required placeholder="type here...."></textarea><br><br>
-        <button>submit</button>
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I agree that the infomation provided above is true to me and honest about me as well</label> <br><br>
+        
+        <button type="submit">submit</button>
     </fieldset>
      </form>
     
